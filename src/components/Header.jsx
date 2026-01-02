@@ -5,8 +5,8 @@ import './styles/header.css';
 const Header = () => {
    
     return (
-        <div className='max-w-7xl mx-auto'>
-            <div className="navbar  ">
+        <div className=' bg-linear-to-r from-[#7E90FE0D] to-[#9873FF0D]'>
+            <div className="navbar  max-w-7xl mx-auto">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className=" lg:hidden">
@@ -30,9 +30,9 @@ const Header = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="rounded-lg bg-linear-to-r from-[#7E90FE] to-[#9873FF] font-extrabold text-xl text-white px-7 py-5 ">Star Applying</a>
+                    <button className="rounded-lg bg-linear-to-r from-[#7E90FE] to-[#9873FF] font-extrabold text-xl text-white px-7 py-5 ">Star Applying</button>
                 </div>
-                </div>
+            </div>
         </div>
     );
 };

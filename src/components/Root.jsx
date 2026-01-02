@@ -7,7 +7,7 @@ const Root = () => {
     return (
         <div className=' manrope-font'>
             <Header></Header>
-            <Outlet></Outlet>
+            <Outlet/>
             <Footer></Footer>
         </div>
     );
