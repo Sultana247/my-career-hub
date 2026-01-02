@@ -5,7 +5,7 @@ import './styles/header.css';
 const Header = () => {
    
     return (
-        <div>
+        <div className='max-w-7xl mx-auto'>
             <div className="navbar  ">
                 <div className="navbar-start">
                     <div className="dropdown">
