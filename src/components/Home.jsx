@@ -23,7 +23,7 @@ const Home = () => {
                 <div className='max-w-7xl mx-auto  '>
                     <div className='pt-37.5 flex flex-col md:flex-row justify-center items-center'>
                         <div className=''>
-                            <h2 className='text-[48px] md:text-72px] font-extrabold'>
+                            <h2 className='text-[48px] md:text-[64px] lg:text-[72px] font-extrabold'>
                                 One Step
                                 <br />
                                 Closer To Your 
@@ -38,7 +38,7 @@ const Home = () => {
                             <button className="rounded-lg bg-linear-to-r from-[#7E90FE] to-[#9873FF] font-extrabold text-xl text-white px-7 py-5 mt-8">Get Started</button>
                         </div>
                         <div className=''>
-                            <img src="../../assets/images/user.png" alt="users picture" srcset="" className='w-180 h-150 md:w-205 md:h-180 '/>
+                            <img src="../../assets/images/user.png" alt="users picture" srcset="" className='w-110 h-90 md:w-205 md:h-180 '/>
                         </div>
 
                     </div>
@@ -46,17 +46,21 @@ const Home = () => {
             </div>
             {/* Job category list */}
             <div className='mt-32 max-w-7xl mx-auto '>
-                <div className='flex flex-col justify-center items-center gap-4 mb-8'>
-                    <h3 className='font-extrabold text-5xl '>Job Category List</h3>
-                    <p className='font-medium text-[16px] text-[#757575]'>Explore thousands of job opportunities with all the information you need. Its your future</p>
+                
+                <div className='flex flex-col justify-center items-center gap-4 mb-8 text-center'>
+                <h3 className='font-extrabold text-xl md:text-3xl lg:text-5xl '>Job Category List</h3>
+                <p className='font-medium text-[16px] text-[#757575]'>Explore thousands of job opportunities with all the information you need. Its your future</p>
+                
                 </div>
-                <div className='grid grid-cols-1 md:grid-col-2 lg:grid-cols-4 gap-6.5'>
+                <div className='flex justify-center items-center'>
+                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6.5 justify-center items-center '>
                     {/* cards */}
                     {
                     jobcategory.map(category=><Jobcategory category={category}></Jobcategory>)
                     }
 
                  
+                </div>
                 </div>
             </div>
             {/* featured jobs */}

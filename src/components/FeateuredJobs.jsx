@@ -13,13 +13,13 @@ const FeateuredJobs = () => {
     return (
         <div>
              <div className='mt-32 max-w-7xl mx-auto '>
-                <div className='flex flex-col justify-center items-center gap-4 mb-8'>
-                    <h3 className='font-extrabold text-5xl '>Featured Jobs</h3>
+                <div className='flex flex-col justify-center items-center gap-4 mb-8 text-center'>
+                    <h3 className='font-extrabold text-xl md:text-3xl lg:text-5xl '>Featured Jobs</h3>
                     <p className='font-medium text-[16px] text-[#757575]'>Explore thousands of job opportunities with all the information you need. Its your future</p>
                 </div>
                           {/*Jobs display*/}
                          
-                         <div className='grid grid-cols-2 gap-6'>
+                         <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
                              {
                             jobs.slice(0, dataLength).map(job=><Jobs job={job} key={job.id}></Jobs>)
                           }

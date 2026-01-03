@@ -14,13 +14,13 @@ const Header = () => {
                         </div>
                         <ul
                             tabIndex="-1"
-                            className=" menu-sm dropdown-content   z-1 mt-3 w-52 p-2  text-[#757575] text-[18px] font-medium">
+                            className="menu menu-sm dropdown-content   z-1 mt-3 w-52 p-2  text-[#757575] text-[18px] font-medium">
                             <NavLink to='/statistics'><a>Statistics</a></NavLink>
                             <NavLink to='/appliedjobs'><a>Applied Jobs</a></NavLink>
                             <NavLink to='/blog'><a>Blog</a></NavLink>
                         </ul>
                     </div>
-                    <a className=" text-[32px] font-extrabold">CareerHub</a>
+                    <a className="text-[24px] md:text-[32px] font-extrabold">CareerHub</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="flex gap-10.5 menu-horizontal px-1  text-[18px] font-medium text-[#757575] ">
@@ -30,7 +30,7 @@ const Header = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <button className="rounded-lg bg-linear-to-r from-[#7E90FE] to-[#9873FF] font-extrabold text-xl text-white px-7 py-5 ">Star Applying</button>
+                    <button className="rounded-lg bg-linear-to-r from-[#7E90FE] to-[#9873FF] font-extrabold text-xl text-white px-3 py-2 md:px-7 md:py-5 ">Start Applying</button>
                 </div>
             </div>
         </div>
