@@ -3,6 +3,7 @@ import Jobs from './Jobs';
 
 const FeateuredJobs = () => {
     const [jobs, setJobs] = useState([])
+    const [dataLength, setDatalength]= useState(4);
     useEffect(()=>{
         fetch('jobs.json')
         .then(res=>res.json())
@@ -20,13 +21,13 @@ const FeateuredJobs = () => {
                          
                          <div className='grid grid-cols-2 gap-6'>
                              {
-                            jobs.map(job=><Jobs job={job} key={job.id}></Jobs>)
+                            jobs.slice(0, dataLength).map(job=><Jobs job={job} key={job.id}></Jobs>)
                           }
 
                           
                          </div>
-                         <div className='flex justify-center mt-10 mb-32'>
-                            <button className="rounded-lg bg-linear-to-r from-[#7E90FE] to-[#9873FF] font-bold text-xl text-white px-4 py-2.5 ">See all jobs</button>
+                         <div className={dataLength === jobs.length ? 'hidden' : 'flex justify-center mt-10 mb-32'}>
+                            <button onClick={()=>setDatalength(jobs.length)} className="rounded-lg bg-linear-to-r from-[#7E90FE] to-[#9873FF] font-bold text-xl text-white px-4 py-2.5 ">See all jobs</button>
                           </div>
             </div>
         </div>
