@@ -1,9 +1,10 @@
 import React from 'react';
 import { CiLocationOn, CiDollar} from "react-icons/ci";
+import { Link } from 'react-router';
 
 const Jobs = (jobs) => {
     const job = jobs.job;
-    const { job_title, company_name, job_type, logo, remote_or_onsite, location, salary} = job;
+    const { job_title, company_name, job_type, logo, remote_or_onsite, location, salary, id} = job;
     return (
         <div>
             <div className=" bg-base-100 shadow-sm p-10">
@@ -24,7 +25,7 @@ const Jobs = (jobs) => {
                         <p className='flex gap-2 justify-center items-center'><CiDollar />Salary: {salary}</p>
                     </div>
                     <div className="">
-                    <button className="rounded-sm bg-linear-to-r from-[#7E90FE] to-[#9873FF] font-bold text-xl text-white px-4 py-2.5 ">View details</button>
+                    <Link to={`/job/${id}`}> <button className="rounded-sm bg-linear-to-r from-[#7E90FE] to-[#9873FF] font-bold text-xl text-white px-4 py-2.5 ">View details</button></Link>
                     </div>
                 </div>
             </div>
