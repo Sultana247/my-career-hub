@@ -38,7 +38,7 @@ const Home = () => {
                             <button className="rounded-lg bg-linear-to-r from-[#7E90FE] to-[#9873FF] font-extrabold text-xl text-white px-7 py-5 mt-8">Get Started</button>
                         </div>
                         <div className=''>
-                            <img src="../../assets/images/user.png" alt="users picture" srcset="" className='w-110 h-90 md:w-205 md:h-180 '/>
+                            <img src="https://i.ibb.co.com/VpHYVx77/user.png" alt="users picture" srcset="" className='w-110 h-90 md:w-205 md:h-180 '/>
                         </div>
 
                     </div>
